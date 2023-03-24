@@ -16,3 +16,4 @@ Aggiungere la visualizzazione di tutte le thumbnails sulla destra dell’immagin
 Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di miniatura attiva.
 ## Steps
 - Creare il container e la struttura del carousel;
+- Creare un ciclo che stampi tutte le immagini;

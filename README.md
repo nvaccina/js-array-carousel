@@ -17,3 +17,7 @@ Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di 
 ## Steps
 - Creare il container e la struttura del carousel;
 - Creare un ciclo che stampi tutte le immagini;
+- Dare a tutte le immagini la classe "hide" e togliera alla prima foto;
+- Al click up o down aggiungere la classe hide all'img visibile per farla scomparire;
+- Al click down incrementare il contatore e a quell'indice img togliere la classe hide;
+- Al click up decrementare il contatore e a quell'indice img togliere la classe hide;

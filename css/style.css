@@ -22,11 +22,11 @@ body{
   position: relative;
   height: 100%;
 }
-.slider .images-wrapper{
+.slider .items-wrapper{
   width: 100%;
   height: 100%;
 }
-.images-wrapper img{
+.items-wrapper img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -41,11 +41,11 @@ body{
   line-height: 20px;
   text-align: center;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: white;
+  opacity: 0.6;
 }
 .btn-arrow:hover{
-  background-color: white;
-  color: rgb(14, 198, 14);
+  color: red;
 }
 .btn-arrow.up{
   top: 10px;
@@ -53,6 +53,6 @@ body{
 .btn-arrow.down{
   bottom: 10px;
 }
-hide{
+.hide{
   display: none;
 }

@@ -6,6 +6,9 @@ const images = [
   'img/05.webp',
 ]
 const itemsWrapper = document.querySelector('.items-wrapper');
+
+const galleryImage = document.querySelector('.gallery-image');
+
 const btnDown = document.querySelector('.down');
 const btnUp = document.querySelector('.up');
 
@@ -16,12 +19,14 @@ for (let i = 0; i < images.length; i++){
 
   const image = images[i];
 
-  console.log(image);
-
   itemsWrapper.innerHTML += `
   <img class="item hide" src="${image}">
   `;
   
+  galleryImage.innerHTML += ` 
+  <img class="gallery opaco" src="${image}">
+  `;
+
 }
 
 const items = document.getElementsByClassName('item');
@@ -46,7 +51,6 @@ btnDown.addEventListener('click', function(){
 
     items[counterImage].classList.remove('hide');
   }
-  
 })
 
 //bottone up
@@ -69,5 +73,7 @@ btnUp.addEventListener('click', function(){
 
     items[counterImage].classList.remove('hide');
   }
-
 })
+
+
+

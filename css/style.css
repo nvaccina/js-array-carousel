@@ -12,6 +12,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .container{
   width: 50%;
@@ -19,7 +20,6 @@ body{
   background-color: white;
 }
 .slider{
-  position: relative;
   height: 100%;
 }
 .slider .items-wrapper{
@@ -31,7 +31,14 @@ body{
   height: 100%;
   object-fit: cover;
 }
-.slider .btn-arrow{
+.hide{
+  display: none;
+}
+.galleria{
+  width: 10%;
+  height: 60%;
+}
+.btn-arrow{
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -53,6 +60,23 @@ body{
 .btn-arrow.down{
   bottom: 10px;
 }
-.hide{
-  display: none;
+/*GALLERIA*/
+.slide{
+  position: relative;
+  height: 100%;
+}
+.slide .gallery-image{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.slide .gallery-image img{
+  width: 100%;
+  height: calc(100% / 5);
+  object-fit: cover;
+}
+
+.opaco{
+  opacity: 0.5;
 }

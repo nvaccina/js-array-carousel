@@ -32,13 +32,22 @@ for (let i = 0; i < images.length; i++){
 const items = document.getElementsByClassName('item');
 items[counterImage].classList.remove('hide');
 
+const gallery = document.getElementsByClassName('gallery');
+gallery[counterImage].classList.remove('opaco');
+gallery[counterImage].classList.add('luce');
+
 //bottone down
 btnDown.addEventListener('click', function(){
 
   items[counterImage].classList.add('hide');
+  gallery[counterImage].classList.add('opaco');
+  gallery[counterImage].classList.remove('luce');
 
   counterImage++;
+
   items[counterImage].classList.remove('hide');
+  gallery[counterImage].classList.remove('opaco');
+  gallery[counterImage].classList.add('luce');
 
   //loop dall'ultima immagine alla prima
   if(counterImage == lastCounterImage){
@@ -57,10 +66,14 @@ btnDown.addEventListener('click', function(){
 btnUp.addEventListener('click', function(){
 
   items[counterImage].classList.add('hide');
+  gallery[counterImage].classList.add('opaco');
+  gallery[counterImage].classList.remove('luce');
 
   counterImage--;
 
   items[counterImage].classList.remove('hide');
+  gallery[counterImage].classList.remove('opaco');
+  gallery[counterImage].classList.add('luce');
 
   //loop dalla prima immagine all'ultima
   if(counterImage === 0){

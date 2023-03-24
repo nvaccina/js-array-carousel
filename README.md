@@ -24,3 +24,4 @@ Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di 
 - Quando il contaore è uguale alla lunghezza dell'array -1, al click down ritornare alla prima immagine;
 - Quando il contaore è uguale a 0, al click up, ritornare all'ultima immagine;
 - Creazione galleria con miniature di tutte le immagini;
+- Dare a tutte le immagini della galleria la classe "opaco" e togliera alla prima foto;

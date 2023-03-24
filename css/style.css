@@ -40,6 +40,7 @@ body{
 }
 .btn-arrow{
   position: absolute;
+  z-index: 1;
   left: 50%;
   transform: translate(-50%);
   width: 20px;
@@ -52,6 +53,7 @@ body{
   opacity: 0.6;
 }
 .btn-arrow:hover{
+  opacity: 1;
   color: red;
 }
 .btn-arrow.up{
@@ -79,4 +81,8 @@ body{
 
 .opaco{
   opacity: 0.5;
+}
+.luce{
+  opacity: 1;
+  border: 3px solid white;
 }

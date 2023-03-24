@@ -21,3 +21,5 @@ Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di 
 - Al click up o down aggiungere la classe hide all'img visibile per farla scomparire;
 - Al click down incrementare il contatore e a quell'indice img togliere la classe hide;
 - Al click up decrementare il contatore e a quell'indice img togliere la classe hide;
+- Quando il contaore è uguale alla lunghezza dell'array -1, al click down ritornare alla prima immagine;
+- Quando il contaore è uguale a 0, al click up, ritornare all'ultima immagine;

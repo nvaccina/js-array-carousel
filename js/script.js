@@ -8,7 +8,9 @@ const images = [
 const itemsWrapper = document.querySelector('.items-wrapper');
 const btnDown = document.querySelector('.down');
 const btnUp = document.querySelector('.up');
+
 let counterImage = 0;
+let lastCounterImage = images.length - 1;
 
 for (let i = 0; i < images.length; i++){
 
@@ -32,6 +34,19 @@ btnDown.addEventListener('click', function(){
 
   counterImage++;
   items[counterImage].classList.remove('hide');
+
+  //loop dall'ultima immagine alla prima
+  if(counterImage == lastCounterImage){
+
+    items[lastCounterImage].insertAdjacentElement("afterend", items[0]);
+    
+    items[counterImage].classList.add('hide');
+
+    counterImage--;
+
+    items[counterImage].classList.remove('hide');
+  }
+  
 })
 
 //bottone up
@@ -42,5 +57,17 @@ btnUp.addEventListener('click', function(){
   counterImage--;
 
   items[counterImage].classList.remove('hide');
+
+  //loop dalla prima immagine all'ultima
+  if(counterImage === 0){
+
+    items[0].insertAdjacentElement("beforebegin", items[lastCounterImage]);
+    
+    items[counterImage].classList.add('hide');
+    
+    counterImage++; 
+
+    items[counterImage].classList.remove('hide');
+  }
 
 })
